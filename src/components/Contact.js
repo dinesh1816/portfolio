@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import linkedinLogo from '../assets/linkedin-logo.png'; // Add your logos
+import emailjs from '@emailjs/browser'; 
+import linkedinLogo from '../assets/linkedin-logo.png';
 import githubLogo from '../assets/github.png';
 
 const Contact = () => {
@@ -19,37 +20,35 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
 
-    console.log('Form Data:', formData);
-    sendEmail(formData);  // ✅ Call sendEmail before resetting formData
-
-    alert('Thank you for your message! I will get back to you soon.');
-
-    setFormData({  // Reset the form after sending email
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
-};
+    try {
+      await sendEmail(formData);
+      alert('Thank you for your message! I will get back to you soon.');
+      setFormData({ name: '', email: '', subject: '', message: '' }); // Reset form
+    } catch (error) {
+      alert('Failed to send message. Please try again.');
+      console.error('Email sending error:', error);
+    }
+  };
 
 
-const sendEmail = async (formData) => {
-  fetch("https://script.google.com/macros/s/AKfycbz3QAIEzfgX8gHcQ2qTqoXhSp1OPucSSkxk1EfiTmB5-oV9hyGcRyUwTViWYA0eeLo9AA/exec", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(formData),
-    mode: "cors"
-  })
-    .then(response => response.json())
-    .then(data => console.log("Success:", data))
-    .catch(error => console.error("Error:", error));
-};
-  
+  const sendEmail = async (formData) => {
+    const serviceID = "service_66spfwf";  // Replace with your EmailJS Service ID
+    const templateID = "template_qxra6yr";  // Replace with your EmailJS Template ID
+    const publicKey = "z1IfpzMscEyNqr26F";  // Replace with your EmailJS Public Key
+
+    const emailParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    return emailjs.send(serviceID, templateID, emailParams, publicKey);
+  };
+
 
   return (
     <section id="contact">
