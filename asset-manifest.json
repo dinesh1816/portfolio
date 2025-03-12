@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.aa9818ba.css",
+    "main.js": "/portfolio/static/js/main.51a61494.js",
+    "static/media/ehr.jpg": "/portfolio/static/media/ehr.760970e488c7b643cdc6.jpg",
+    "static/media/profile.jpeg": "/portfolio/static/media/profile.41ac80baca5daec7e733.jpeg",
+    "static/media/scikitlearn.png": "/portfolio/static/media/scikitlearn.6e8fb972f2cbb25af1f6.png",
+    "static/media/rabbitmq.svg": "/portfolio/static/media/rabbitmq.c7153a56a8345b1a9a6cb8321c8b692a.svg",
+    "static/media/websocket.svg": "/portfolio/static/media/websocket.6070f3440030b302034b9aeca44164fa.svg",
+    "index.html": "/portfolio/index.html",
+    "main.aa9818ba.css.map": "/portfolio/static/css/main.aa9818ba.css.map",
+    "main.51a61494.js.map": "/portfolio/static/js/main.51a61494.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa9818ba.css",
+    "static/js/main.51a61494.js"
+  ]
+}
