@@ -9,25 +9,25 @@ const Experience = () => {
         <div className="experience-item">
           <h3>Full Stack Developer</h3>
           <h4>Ten20InfoMedia</h4>
-          <p className="experience-duration">Jul 2022 – Aug 2023</p>
+          <p className="experience-duration">Jul 2021 – Aug 2023</p>
           <ul>
-            <li>Developed a seamless call forwarding system for the Alohaa platform using Node.js, Asterisk REST Interface (ARI), and WebSockets.</li>
-            <li>Optimized VoIP call latency by 50% through Redis caching implementation.</li>
-            <li>Designed dynamic DID detection and routing system handling 10,000+ daily calls.</li>
-            <li>Enhanced platform reliability with microservices architecture, reducing errors by 40%.</li>
-            <li>Built reusable UI components in React.js, improving user engagement by 20%.</li>
-            <li>Refactored backend services ensuring 99.9% uptime.</li>
+            <li>Designed and deployed a distributed routing platform for cloud telephony (Alohaa), increasing call throughput by 45% and reducing latency from 6s to under 3s for 10K+ daily calls.</li>
+            <li>Built and scaled microservices using Node.js and ARI-client, enabling real-time number masking and outbound IVR logic.</li>
+            <li>Developed multiple APIs and backend features for "Doosra," a privacy-focused virtual mobile number platform, using Java and Spring Boot; contributed to secure call/SMS routing, user onboarding, and analytics modules.</li>
+            <li>Integrated AWS services (EC2, Lambda, S3) for cloud automation and failover recovery, reducing downtime by 35%.</li>
+            <li>Tuned system performance by implementing Redis caching, MongoDB indexing, and async job queues, reducing query response time by 30%.</li>
+            <li>Spearheaded the development of reusable UI components with React.js, enhancing user engagement by 20%.</li>
+            <li>Led architectural improvements for DID management, fail-safe routing, and multichannel queueing strategies.</li>
           </ul>
         </div>
         <div className="experience-item">
           <h3>Software Development Intern</h3>
           <h4>Ten20InfoMedia</h4>
-          <p className="experience-duration">May 2022 – Jun 2022</p>
+          <p className="experience-duration">January 2021 – July 2021</p>
           <ul>
-            <li>Refactored MERN stack codebase, improving efficiency by 15%.</li>
-            <li>Boosted UI performance by 20% through React optimizations.</li>
-            <li>Reduced API response times by 30% using Node.js clustering.</li>
-            <li>Automated CI/CD workflows using GitHub Actions & Docker.</li>
+            <li>Increased React app performance by 20% using memoization, lazy loading, and React Profiler insights. </li>
+            <li>Enabled backend scalability with Node.js clustering and Redis-based session handling, reducing concurrent user timeout errors by 40%.</li>
+            <li>Streamlined deployments via Dockerized CI/CD pipelines using GitHub Actions.</li>
           </ul>
         </div>
       </div>

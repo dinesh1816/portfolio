@@ -13,7 +13,7 @@ import scikitlearnLogo from "../assets/scikitlearn.png";
 import tensorflowLogo from "../assets/tensorflow.png";
 import dockerLogo from "../assets/docker.png";
 import rabbitmqLogo from "../assets/rabbitmq.svg";
-import celeryLogo from "../assets/celery.png";
+// import celeryLogo from "../assets/celery.png";
 import sqlLogo from "../assets/sql.png";
 import mongodbLogo from "../assets/mongodb.png";
 import postgresqlLogo from "../assets/postgresql.png";
@@ -21,8 +21,8 @@ import ehrLogo from "../assets/ehr.jpg";
 import gitLogo from "../assets/git.png";
 import githubLogo from "../assets/github.png";
 import nginxLogo from "../assets/nginx.png";
-import prometheusLogo from "../assets/prometheus.png";
-import grafanaLogo from "../assets/grafana.png";
+// import prometheusLogo from "../assets/prometheus.png";
+// import grafanaLogo from "../assets/grafana.png";
 import officeLogo from "../assets/office.png";
 import aesLogo from "../assets/aes.png";
 import jwtLogo from "../assets/jwt.png";
@@ -44,7 +44,7 @@ const Skills = () => {
     { name: "TensorFlow", expertise: 65, logo: tensorflowLogo },
     { name: "Docker", expertise: 85, logo: dockerLogo },
     { name: "RabbitMQ", expertise: 80, logo: rabbitmqLogo },
-    { name: "Celery", expertise: 75, logo: celeryLogo },
+    // { name: "Celery", expertise: 75, logo: celeryLogo },
     { name: "SQL", expertise: 90, logo: sqlLogo },
     { name: "MongoDB", expertise: 85, logo: mongodbLogo },
     { name: "PostgreSQL", expertise: 88, logo: postgresqlLogo },
@@ -52,8 +52,8 @@ const Skills = () => {
     { name: "Git", expertise: 95, logo: gitLogo },
     { name: "GitHub", expertise: 90, logo: githubLogo },
     { name: "Nginx", expertise: 80, logo: nginxLogo },
-    { name: "Prometheus", expertise: 75, logo: prometheusLogo },
-    { name: "Grafana", expertise: 70, logo: grafanaLogo },
+    // { name: "Prometheus", expertise: 75, logo: prometheusLogo },
+    // { name: "Grafana", expertise: 70, logo: grafanaLogo },
     { name: "Microsoft Office Suite", expertise: 85, logo: officeLogo },
     { name: "AES-256 Encryption", expertise: 80, logo: aesLogo },
     { name: "JWT Authentication", expertise: 85, logo: jwtLogo },
