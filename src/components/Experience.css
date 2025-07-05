@@ -1,0 +1,112 @@
+/* Experience Section */
+#experience {
+    padding: 40px 20px; /* Reduced padding */
+    background-color: #1f1f1f; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 40px; /* Added margin to separate sections */
+  }
+  
+  #experience h2 {
+    font-size: 2rem; /* Smaller font size */
+    color: #00bcd4; /* Cyan accent color */
+    margin-bottom: 30px; /* Reduced margin */
+    animation: slideInFromLeft 1s ease-in-out;
+  }
+  
+  .experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .experience-item {
+    margin-bottom: 30px; /* Reduced margin */
+    padding: 20px; /* Added padding */
+    background-color: #2d2d2d; /* Darker background for each experience item */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .experience-item h3 {
+    font-size: 1.5rem; /* Smaller font size */
+    color: #00bcd4; /* Cyan accent color */
+    margin-bottom: 8px; /* Reduced margin */
+  }
+  
+  .experience-item h4 {
+    font-size: 1.2rem; /* Smaller font size */
+    color: #e0e0e0; /* Light text */
+    margin-bottom: 8px; /* Reduced margin */
+  }
+  
+  .experience-duration {
+    font-size: 1rem; /* Smaller font size */
+    color: #e0e0e0; /* Light text */
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  .experience-item ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indent bullet points */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .experience-item li {
+    font-size: 1rem; /* Smaller font size */
+    line-height: 1.6; /* Tighter line height */
+    color: #e0e0e0; /* Light text */
+    margin-bottom: 8px; /* Reduced margin */
+  }
+  
+  /* Responsive Design for Smaller Devices */
+  @media (max-width: 768px) {
+    #experience h2 {
+      font-size: 1.8rem; /* Smaller font size for smaller devices */
+      text-align: center; /* Center-align the heading */
+    }
+  
+    .experience-item h3 {
+      font-size: 1.4rem; /* Smaller font size for smaller devices */
+    }
+  
+    .experience-item h4 {
+      font-size: 1.1rem; /* Smaller font size for smaller devices */
+    }
+  
+    .experience-item li {
+      font-size: 0.95rem; /* Smaller font size for smaller devices */
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
